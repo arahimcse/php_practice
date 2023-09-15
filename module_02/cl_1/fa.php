@@ -87,6 +87,18 @@
     }
 
     echo makeyogurt1(style: "natural");
+
+    //Example #11 Using ... to access variable arguments
+    function sum(...$numbers) {
+        $acc = 0;
+        foreach ($numbers as $n) {
+            $acc += $n;
+        }
+        return $acc.'<br/>';
+    }
+    
+    echo sum(1, 2, 3, 4);
+
     ?>
     <a href="./index.php">Back to Home</a>
 </body>
