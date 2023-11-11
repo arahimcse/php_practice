@@ -5,6 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $stringData = file_get_contents("php://input");
     
     $stringData = json_decode($stringData, true);
+
     print_r($stringData);
 }
 
@@ -21,7 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
     //Out the object data
     print_r($phpObj);
-
 }
 
 ?>
