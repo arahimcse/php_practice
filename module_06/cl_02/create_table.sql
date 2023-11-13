@@ -35,3 +35,8 @@ CREATE TABLE t1 (
 
 */
 SELECT * FROM t1;
+
+
+SELECT o.*, c.name FROM orders o INNER JOIN customers c ON o.customer_id = c.id;
+
+SELECT products.*, c.name FROM products p LEFT JOIN categories c ON p.category_id = c.id;
