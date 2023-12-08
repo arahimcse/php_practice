@@ -24,18 +24,6 @@ class RahimController extends Controller
         return 'All '.$id;
     }
 
-    function displayWeather()
-    {
-        $weather = [
-            "City"=>"Dhaka",
-            "Country" => "Bangladesh",
-            "Population" => "2000000",
-            "TimeZone" => "GMT+6"
-        ];
-
-        return $weather;
-    }
-
     function displayGetRequest(Request $requesst)
     {
         return view('viewForm');
