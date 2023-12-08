@@ -36,5 +36,17 @@ class RahimController extends Controller
         return $weather;
     }
 
+    function displayGetRequest(Request $requesst)
+    {
+        return view('viewForm');
+    }
+
+    function displayPostRequest(Request $requesst)
+    {
+        // return "Post Request";
+        return $requesst->input("person");
+    }
+
+
 
 }

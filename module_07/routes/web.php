@@ -21,3 +21,9 @@ Route::get('/', function () {
 Route::get('/first', [RahimController::class, 'show']);
 Route::get('/first/{id}', [RahimController::class, 'getData']);
 Route::get('/we', [RahimController::class, 'displayWeather']);
+
+Route::get('/form', [RahimController::class, 'displayGetRequest']);
+Route::post('/form', [RahimController::class, 'displayPostRequest']);
+
+
+
