@@ -19,5 +19,6 @@
     <h1>location= {{$location['timezone'] }}</h1>
     <h1>location= {{$seasons['0'] }}</h1>
     <h1>location= {{$seasons['1'] }}</h1>
+
 </body>
 </html>

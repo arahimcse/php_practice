@@ -28,6 +28,7 @@ Route::post('/form', [RahimController::class, 'displayPostRequest']);
 
 
 Route::get('/weather', [WeatherController::class, 'displayWeatherData']);
+Route::get('/wea/{location}', [WeatherController::class, 'weatherDetails']);
 
 
 
