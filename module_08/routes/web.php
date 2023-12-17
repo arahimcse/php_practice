@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PracticeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get("/greeting", function(){return "Hello World"; });
+Route::get("/name/{name?}", [PracticeController::class, 'show'])->whereAlpha("name");
+Route::get("/id/{id?}", [PracticeController::class, 'showId'])->whereNumber("id");
