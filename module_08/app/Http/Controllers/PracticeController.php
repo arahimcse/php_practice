@@ -8,7 +8,10 @@ class PracticeController extends Controller
 {
     function show(Request $request, $name=null)
     {
-       return view('PracticeView', compact('name'));
+       $all= $request->all();
+       print_r($all);
+        die();
+       //return view('PracticeView', compact('name'));
     // return "Hello ".$name;
     }
     function showId(Request $request, $id)
