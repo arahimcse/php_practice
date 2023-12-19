@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get("/greeting", function(){return "Hello World"; });
 Route::get("/name/{name?}", [PracticeController::class, 'show'])->whereAlpha("name");
 Route::get("/id/{id?}", [PracticeController::class, 'showId'])->whereNumber("id");
+Route::get("/persons", [PracticeController::class, 'personForm']);
+Route::post("/persons", [PracticeController::class, 'createAPerson']);
